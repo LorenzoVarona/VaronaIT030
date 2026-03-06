@@ -4,15 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Lorenzo Varona Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
- <style>
-h2 { 
-color: darkgreen;
-}
+  
+  <style>
+    h2 { 
+    color: darkgreen;
+     }  
 </style>
 </head>
 
 <body>
+  <!-- I used <nav> for the Home, Announcements, Events, and Contact links because they are the navigation links for the page -->
+    <nav id="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Announcements</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+
   <div class="container">
     <!-- I used <header> for the Hofstra Student Services title because it contains the introduction content-->
 
@@ -23,15 +35,7 @@ color: darkgreen;
       </header>
 
     <!-- Students should convert this into <nav> containing a real list (<ul><li><a>) -->
-    <!-- I used <nav> for the Home, Announcements, Events, and Contact links because they are the navigation links for the page -->
-    <nav id="nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Announcements</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    </nav>
+    
 
     <div class="layout">
       <!-- I used <main> for the section containing posts because it has the primary content of the page -->
@@ -44,8 +48,12 @@ color: darkgreen;
         <article class="section-box">
           <!-- Students should convert this into headings (h1/h2) and fix hierarchy -->
           <h2>About Me</h2>
+          <div class="profile-wrap">
           <img src="profile.jpg" alt="Photo of Lorenzo Varona" width="200">
-          <div class="meta">Posted March 3, 2026</div>
+          <div class="profile-badge">Hofstra Pride</div>
+          </div>
+          <div class="meta">Posted March 5, 2026</div>
+          
           <div class="text">
             <p> My name is Lorenzo Varona, I am currently a student at Hofstra University studying business and accounting. My goal is to build a strong foundation in financial analysis and corporate accounting. I am particularly interested in gaining real-world experience through internships and professional opportunities. Outside of academics, I enjoy athletics and being part of competitive team environments. </p>
           </article> 
