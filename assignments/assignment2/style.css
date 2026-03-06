@@ -4,6 +4,8 @@ body {
       margin: 0;
       background: #f5f6f8;
       color: #222;
+
+ padding-top: 70px;
 }
 .container {
   max-width: 900px;
@@ -21,17 +23,33 @@ body {
       opacity: 0.9;
     }
 #nav {
+position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
 background: white;
-border: 1px solid #e5e7eb;
+border-bottom: 1px solid #e5e7eb;
 padding: 12px;
-margin-top: 12px;
-border-radius: 10px;
+
+ z-index: 1000;
+  margin-top: 0;
+  border-radius: 0;
 }
+
+#nav ul {
+  list-style: none;      
+  margin: 0;
+  padding: 0;
+  display: flex;         
+  gap: 15px;             
+}
+
 #nav a {
 color: #2563eb;
 text-decoration: none;
-margin-right: 10px;
 }
+
 .layout {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -39,6 +57,7 @@ margin-right: 10px;
       margin-top: 14px;
       align-items: start;
 }
+
 .section-box {
 padding: 20px;
 border: 1px solid #e5e7eb;
@@ -46,15 +65,18 @@ border-radius: 10px;
 margin-bottom: 20px;
 background: #ffffff;
 }
+
 h1 {
 font-size: 24px;
 margin-bottom: 10px;
 }
+
 h2 {
 font-size: 18px;
 margin-bottom: 6px;
 color: #1f2937;
 }
+
 p {
 margin-bottom: 10px;
 line-height: 1.5;
@@ -62,6 +84,19 @@ line-height: 1.5;
 
 a {
 color: blue;
+}
+.profile-wrap {
+position: relative;
+display: inline-block;
+}
+.profile-badge {
+position: absolute;
+top: 0;
+left: 0;
+width: 50px;
+height: 50px;
+background: rgba(0,0,0,0.2);
+z-index: 2;
 }
 footer {
 margin-top: 20px;
