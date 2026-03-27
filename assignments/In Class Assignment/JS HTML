@@ -158,7 +158,6 @@
  let extraNote;
  if (testScore >= 90) {
   extraNote =  
-}
 
 
   </script>
