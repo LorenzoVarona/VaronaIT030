@@ -1,0 +1,90 @@
+style.css 
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #F4F8FB;
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+header {
+ background-color: #2C6E91;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+ color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #4CAF9E;
+}
+
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-box {
+background-color: #ffffff;
+  border: 1px solid #d0dbe5;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.two-column {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.two-column div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.profile-image,
+.work-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.work-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.work-card {
+  flex: 1;
+  min-width: 260px;
+  background: white;
+  border: 1px solid #d0dbe5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+footer {
+ background-color: #2C6E91;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
