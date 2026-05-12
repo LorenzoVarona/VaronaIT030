@@ -105,6 +105,41 @@ gallery-grid {
 .gallery-card p {
  margin-top: 12px;
 }
+.items-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.item-card {
+  background-color: #ffffff;
+  border: 1px solid #d0dbe5;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 260px;
+}
+
+.item-card h3 {
+  margin-top: 0;
+}
+
+.item-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background-color: #2C6E91;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.85em;
+}
+
+select {
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #d0dbe5;
+  border-radius: 6px;
+}
+
 
 footer {
  background-color: #2C6E91;
