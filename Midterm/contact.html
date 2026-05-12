@@ -21,12 +21,12 @@
 <header>
 <h1>Lorenzo Varona</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="work.html">Work</a>
-<a href="gallery.html">Gallery</a>
-<a href="interest.html">Interests</a>
-<a href="contact.html">Contact</a>
+<a href="index.html" onclick="gtag('event', 'nav_click', {'link_name': 'home'});">Home</a>
+<a href="about.html" onclick="gtag('event', 'nav_click', {'link_name': 'about'});">About</a>
+<a href="work.html" onclick="gtag('event', 'nav_click', {'link_name': 'work'});">Work</a>
+<a href="gallery.html" onclick="gtag('event', 'nav_click', {'link_name': 'gallery'});">Gallery</a>
+<a href="interests.html" onclick="gtag('event', 'nav_click', {'link_name': 'interests'});">Interests</a>
+<a href="contact.html" onclick="gtag('event', 'nav_click', {'link_name': 'contact'});">Contact</a>
 </nav>
 </header>
 
@@ -34,7 +34,11 @@
 
 <section class="section-box">
 <h2>Contact</h2>
-<p>LVarona1@pride.hofstra.edu</p>
+<p>
+  <a href="mailto:LVarona1@pride.hofstra.edu" onclick="gtag('event', 'email_click', {'link_name': 'contact_email'});">
+    LVarona1@pride.hofstra.edu
+  </a>
+</p>
  <p><a href="https://www.linkedin.com/in/lorenzo-varona-9907b329b" target="_blank">LinkedIn</a></p>
 </section>
 
