@@ -36,7 +36,7 @@
   <p>This page uses JavaScript to filter my interests, projects, and experiences by category.</p>
 
   <label for="category-select">Choose a category:</label>
-  <select id="category-select" onchange="filterItems(this.value)">
+ <select id="category-select" onchange="filterItems(this.value); gtag('event', 'filter_used', {'category': this.value});">
     <option value="">All</option>
     <option value="School">School</option>
     <option value="Athletics">Athletics</option>
