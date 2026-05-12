@@ -1,8 +1,3 @@
-script.js
-// ============================================================
-//  PART 1 — YOUR DATA
-// ============================================================
-
 const items = [
   {
     name: "Accounting Classes",
@@ -36,25 +31,18 @@ const items = [
   }
 ];
 
-
-// ============================================================
-//  PART 2 — THE RENDER FUNCTION
-// ============================================================
-
 function renderItems(list) {
-
   const container = document.getElementById("items-container");
 
   container.innerHTML = "";
 
   for (let i = 0; i < list.length; i++) {
-
     const card = document.createElement("div");
     card.className = "item-card";
 
     card.innerHTML =
       "<h3>" + list[i].name + "</h3>" +
-      "<p>"  + list[i].description + "</p>" +
+      "<p>" + list[i].description + "</p>" +
       "<span class='item-tag'>" + list[i].category + "</span>";
 
     container.appendChild(card);
@@ -64,47 +52,40 @@ function renderItems(list) {
     list.length + " items shown";
 }
 
-
-// ============================================================
-//  PART 3 — THE FILTER FUNCTION
-// ============================================================
-
 function filterItems(category) {
-
   switch (category) {
-
     case "":
       renderItems(items);
       break;
 
     case "School":
-      const filtered1 = [];
+      const filteredSchool = [];
       for (let i = 0; i < items.length; i++) {
         if (items[i].category === "School") {
-          filtered1.push(items[i]);
+          filteredSchool.push(items[i]);
         }
       }
-      renderItems(filtered1);
+      renderItems(filteredSchool);
       break;
 
     case "Athletics":
-      const filtered2 = [];
+      const filteredAthletics = [];
       for (let i = 0; i < items.length; i++) {
         if (items[i].category === "Athletics") {
-          filtered2.push(items[i]);
+          filteredAthletics.push(items[i]);
         }
       }
-      renderItems(filtered2);
+      renderItems(filteredAthletics);
       break;
 
     case "Projects":
-      const filtered3 = [];
+      const filteredProjects = [];
       for (let i = 0; i < items.length; i++) {
         if (items[i].category === "Projects") {
-          filtered3.push(items[i]);
+          filteredProjects.push(items[i]);
         }
       }
-      renderItems(filtered3);
+      renderItems(filteredProjects);
       break;
 
     default:
@@ -112,10 +93,5 @@ function filterItems(category) {
       break;
   }
 }
-
-
-// ============================================================
-//  PART 4 — RUN ON LOAD
-// ============================================================
 
 filterItems("");
